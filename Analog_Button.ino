@@ -2,7 +2,7 @@
 
 void setup() 
 
- {pinMode(A3, INPUT);
+ {pinMode(A0, INPUT);
   pinMode(2, INPUT_PULLUP);
   pinMode(3, INPUT_PULLUP);
   pinMode(4, INPUT_PULLUP);
@@ -28,7 +28,7 @@ int lastButtonState[11] = {0,0,0,0};
 
 void loop() {
 
-int pot = analogRead(A3);
+int pot = analogRead(A0);
 int mapped = map(pot,0,1023,0,255);
 {Joystick.setThrottle(mapped);}
  
